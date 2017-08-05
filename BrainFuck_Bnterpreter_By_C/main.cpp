@@ -1,5 +1,13 @@
-//2017年7月24日,星期一 23:41
 
+
+/*
+Beta 0.2
+Add try,catch
+
+
+Beta 0.1
+2017年7月24日,星期一 23:41
+*/
 #include <stdio.h>
 
 
@@ -138,9 +146,18 @@ void lexer()
 
 int main()
 {
-
+	try
+	{
     lexer();
+	}
+	catch(char* str)
+	{
+		if (str!=nullptr)
+		{
+			printf("\r\nError: %s\r\n",str);
+		}
 
+	}
     system("pause");
 
     return 0;
