@@ -1,6 +1,9 @@
 
 
 /*
+Beta 0.3
+Add try,...
+
 Beta 0.2
 Add try,catch
 
@@ -157,6 +160,10 @@ int main()
 			printf("\r\nError: %s\r\n",str);
 		}
 
+	}
+	catch(...)
+	{
+		printf("\r\nError: happen some Undefine exception.exiting...\r\n");
 	}
     system("pause");
 
